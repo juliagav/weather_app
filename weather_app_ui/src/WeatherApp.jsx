@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function weatherApp(){
+function WeatherApp(){
   const[city, setCity] = useState("");
   const[weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
@@ -61,6 +61,6 @@ function weatherApp(){
   )
 }
 
-export default weatherApp ;
+export default WeatherApp ;
 
 

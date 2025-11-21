@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #2d3436;
+}
+
+.weather-app {
+  background: white;
+  width: 380px;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.weather-app h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.weather-app p {
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  opacity: 0.75;
+}
+
+.weather-app input {
+  width: 65%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #b2bec3;
+  outline: none;
+  transition: border 0.25s ease;
+}
+
+.weather-app input:focus {
+  border-color: #0984e3;
+}
+
+.weather-app button {
+  width: 30%;
+  margin-left: 8px;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #0984e3;
+  color: white;
+  transition: background 0.25s ease;
+}
+
+.weather-app button:disabled {
+  background: #dfe6e9;
+  color: #636e72;
+  cursor: not-allowed;
+}
+
+.weather-app button:hover:not(:disabled) {
+  background: #0773c9;
+}
+
+.weather-app div h2 {
+  margin-top: 18px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.weather-app .error {
+  color: #d63031;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
